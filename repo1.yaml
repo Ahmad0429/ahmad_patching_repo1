@@ -1,1 +1,10 @@
 #Hello
+---
+- name: updating all packages
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: updating all packages
+    dnf:
+      name: "*"
+      state: latest 
