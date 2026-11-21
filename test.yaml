@@ -1,1 +1,13 @@
 #Hello
+---
+- name: Testing
+  hosts: all
+  tasks:
+    - name: Add user
+      user:
+        name: "ismaeel_1"
+        state: present
+      
+    
+      
+  
